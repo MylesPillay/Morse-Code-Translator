@@ -1,17 +1,17 @@
-import { translateEnglishToMorse } from "./translator.js";
+import { translateToMorse } from "./translator.js";
 
-const inputEnglishWord = document.querySelector(".english-word");
-const submitEnglishWord = document.querySelector(".submit-btn");
-const receiveMorseTranslation = document.querySelector(".morse-translation");
+const inputEnglish = document.querySelector(".user-input");
+const morseTranslation = document.querySelector(".morse-translation");
+const submitInput = document.querySelector(".submit-btn");
 const reset = document.querySelector(".reset-btn");
 
-submitEnglishWord.addEventListener("click", () => {
-  const englishInput = inputEnglishWord.value;
-  const morseTranslation = translateEnglishToMorse(englishInput);
-  receiveMorseTranslation.innerHTML=`${morseTranslation}`;
-})
 
+submitInput.addEventListener("click", () => {
+  const englishInput = inputEnglish.value;
+  const englishToMorseTranslation = translateToMorse(englishInput);
+  morseTranslation.innerHTML=`${englishToMorseTranslation}`;
+})
 reset.addEventListener("click", () => {
-  inputEnglishWord.value = "";
-  receiveMorseTranslation.innerHTML = "";
+  inputEnglish.value = "";
+  morseTranslation.innerHTML = "";
 })

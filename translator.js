@@ -1,7 +1,7 @@
-export const translateEnglishToMorse = (english) => {
+export const translateToMorse = (english) => {
   let englishArr = english.split("");
 
-  let morseTranslation = englishArr.map((englishLetter) => {
+  let translation = englishArr.map((englishLetter) => {
     if (englishLetter === "a") {
       return ".-";
     } else if (englishLetter === "b") {
@@ -79,6 +79,6 @@ export const translateEnglishToMorse = (english) => {
     }
   })
 
-  return morseTranslation.join(" ");
+  return translation.join(" ");
     
 }

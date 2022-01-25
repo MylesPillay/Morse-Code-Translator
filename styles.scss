@@ -1,9 +1,191 @@
-@import "assets/styles/main";
 @import "assets/styles/typography";
 @import "assets/styles/buttons";
+@import "assets/styles/variables";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.page-title {
+  text-align: center;
+  padding: 100px;
+  text-shadow: 0px 1px $primary-colour, 1px 2px $primary-colour, 2px 3px 3px 4px $tertiary-colour, 5px 6px $btn-background-colour;
+}
+@media only screen and (min-width: 650px) {
+  .page-title {
+    font-size: 48px;
+  }
+}
+
+.translator-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.user-input {
+  font-size: 15px;
+  border: 2px solid black;
+}
+@media only screen and (min-width: 390px) {
+  .user-input {
+    width: 35vh;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .user-input {
+    width: 50vh;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 650px) {
+  .user-input {
+    width: 70vh;
+    font-size: 30px;
+  }
+}
+
+.morse-translation {
+  padding: 20px 5px 0px;
+  border: 2px solid black;
+}
+@media only screen and (min-width: 390px) {
+  .morse-translation {
+    width: 35vh;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .morse-translation {
+    width: 50vh;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 650px) {
+  .morse-translation {
+    width: 70vh;
+    font-size: 30px;
+  }
+}
+
+.page-title, .user-input, .submit-btn, .reset-btn, .morse-translation {
+  font-family: "Share Tech Mono", monospace;
+}
+
+.btn-container {
+  display: flex;
+  gap: 50px;
+}
+
+.submit-btn, .reset-btn {
+  padding: 10px;
+  background-color: $btn-background-colour;
+  border: 2px solid  $border-color;
+  box-shadow: 0px 1px $primary-colour, 1px 2px $tertiary-colour, 3px 4px black;
+  cursor: pointer;
+  font-weight: bold;
+}
+@media only screen and (min-width: 480px) {
+  .submit-btn, .reset-btn {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 650px) {
+  .submit-btn, .reset-btn {
+    font-size: 22px;
+  }
+}
+
+.reset-btn {
+  background-color: #7CA982;
+  box-shadow: 0px 1px $primary-colour, 1px 2px $tertiary-colour, 3px 4px black;
+}
+
+.submit-btn:hover {
+  background-color: $submit-btn-hover-colour;
+}
+
+.reset-btn:hover {
+  background-color: $reset-btn-hover-colour;
+}
+
+.submit-btn:active, .reset-btn:active {
+  transform: translate(1px, 1px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.background-img {
+  position: absolute;
+  background: url(assets/media/morse-code-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  opacity: 25%;
+}
+
+.page-title {
+  text-align: center;
+  padding: 100px;
+  text-shadow: 0px 1px $primary-colour, 1px 2px $primary-colour, 2px 3px $primary-colour, 3px 4px $primary-colour, 5px 6px $secondary-colour;
+
+  @media only screen and (min-width: $large-screen) {
+    font-size: 50px;
+  }
+}
+
+.translator-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  
+}
+
+.english-word {
+  font-size: 15px;
+  border: 2px solid $tertiary-colour;
+
+  @media only screen and (min-width: $small-screen) {
+    width: 35vh;
+  }
+
+  @media only screen and (min-width: $medium-screen) {
+    width: 50vh;
+    font-size: 20px;
+  }
+
+  @media only screen and (min-width: $large-screen) {
+    width: 70vh;
+    font-size: 30px;
+  }
+}
+
+.morse-translation {
+  padding: 20px 5px 0px;
+  border: 2px solid $tertiary-colour;
+
+  @media only screen and (min-width: $small-screen) {
+    width: 35vh;
+  }
+
+  @media only screen and (min-width: $medium-screen) {
+    width: 50vh;
+    font-size: 20px;
+  }
+
+  @media only screen and (min-width: $large-screen) {
+    width: 70vh;
+    font-size: 30px;
+  }
 }

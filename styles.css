@@ -1,114 +1,241 @@
+.page-title, .english-word, .submit-btn, .reset-btn, .morse-translation {
+  font-family: "Share Tech Mono", monospace;
+}
 
-  .page-title {
-    text-align: center;
-    padding: 100px;
-    text-shadow: 0px 1px #7CA982, 1px 2px #7CA982, 2px 3px #7CA982, 3px 4px #7CA982, 5px 6px #F1F7ED;
-  }
-  @media only screen and (min-width: 650px) {
-    .page-title {
-      font-size: 48px;
-    }
-  }
-  
-  .translation-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-  }
-  
-  .english-word {
-    font-size: 15px;
-    border: 2px solid black;
-  }
-  @media only screen and (min-width: 390px) {
-    .english-word {
-      width: 35vh;
-    }
-  }
-  @media only screen and (min-width: 480px) {
-    .english-word {
-      width: 50vh;
-      font-size: 20px;
-    }
-  }
-  @media only screen and (min-width: 650px) {
-    .english-word {
-      width: 70vh;
-      font-size: 30px;
-    }
-  }
-  
-  .morse-translation {
-    padding: 20px 5px 0px;
-    border: 2px solid black;
-  }
-  @media only screen and (min-width: 390px) {
-    .morse-translation {
-      width: 35vh;
-    }
-  }
-  @media only screen and (min-width: 480px) {
-    .morse-translation {
-      width: 50vh;
-      font-size: 20px;
-    }
-  }
-  @media only screen and (min-width: 650px) {
-    .morse-translation {
-      width: 70vh;
-      font-size: 30px;
-    }
-  }
-  
-  .page-title, .english-word, .submit-btn, .reset-btn, .morse-translation {
-    font-family: "Share Tech Mono", monospace;
-  }
-  
-  .btn-container {
-    display: flex;
-    gap: 50px;
-  }
-  
+.btn-container {
+  display: flex;
+  gap: 50px;
+}
+
+@media only screen and (min-width: 480px) {
   .submit-btn, .reset-btn {
-    padding: 10px;
-    background-color: #F1F7ED;
-    border: 2px solid black;
-    box-shadow: 0px 1px #7CA982, 1px 2px #7CA982, 3px 4px black;
-    cursor: pointer;
-    font-weight: bold;
+    font-size: 18px;
   }
-  @media only screen and (min-width: 480px) {
-    .submit-btn, .reset-btn {
-      font-size: 18px;
-    }
+}
+@media only screen and (min-width: 650px) {
+  .submit-btn, .reset-btn {
+    font-size: 22px;
   }
-  @media only screen and (min-width: 650px) {
-    .submit-btn, .reset-btn {
-      font-size: 22px;
-    }
+}
+
+.reset-btn {
+  box-shadow: 0px 1px #c7c7c7, 1px 2px #c7c7c7, 3px 4px #001a1a;
+}
+
+.submit-btn:hover {
+  background-color: #7efcf6;
+}
+
+.reset-btn:hover {
+  background-color: #06d8d7;
+}
+
+.submit-btn:active, .reset-btn:active {
+  transform: translate(1px, 1px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page-title {
+  color: #7efcf6;
+  text-align: center;
+  padding: 100px;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+}
+
+@media only screen and (min-width: 650px) {
+  .page-title {
+    font-size: 48px;
   }
+}
+.translator-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.user-input {
+  font-size: 15px;
+  padding: 1rem;
+  border: 4px solid rgb(75, 133, 133);
+  background-color: rgb(224, 251, 254);
   
-  .reset-btn {
-    background-color: #7CA982;
-    box-shadow: 0px 1px #F1F7ED, 1px 2px #F1F7ED, 3px 4px black;
+
+}
+
+@media only screen and (min-width: 390px) {
+  .user-input {
+    width: 35vh;
   }
-  
-  .submit-btn:hover {
-    background-color: #bdf09a;
+}
+@media only screen and (min-width: 480px) {
+  .user-input {
+    width: 50vh;
+    font-size: 20px;
   }
-  
-  .reset-btn:hover {
-    background-color: #57a161;
+}
+@media only screen and (min-width: 650px) {
+  .user-input {
+    width: 70vh;
+    font-size: 30px;
   }
-  
-  .submit-btn:active, .reset-btn:active {
-    transform: translate(1px, 1px);
+}
+.morse-translation {
+  border: 4px solid rgb(75, 133, 133);
+
+}
+
+@media only screen and (min-width: 390px) {
+  .morse-translation {
+    width: 35vh;
   }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+}
+@media only screen and (min-width: 480px) {
+  .morse-translation {
+    width: 50vh;
+    font-size: 20px;
   }
+}
+@media only screen and (min-width: 650px) {
+  .morse-translation {
+    width: 70vh;
+    font-size: 30px;
+  }
+}
+.page-title, .user-input, .submit-btn, .reset-btn, .morse-translation {
+  font-family: "Share Tech Mono", monospace;
+}
+
+.btn-container {
+  display: flex;
+  gap: 10rem;
+}
+
+.submit-btn, .reset-btn {
+  padding: 10px;
+  background-color: #06d8d7;
+  border: 3px solid rgb(75, 133, 133);
+  ;
+  box-shadow: 0px 1px rgba(0, 188, 212, 0.33), 1px 2px #001a1a, 3px 4px rgb(75, 133, 133);
+
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 480px) {
+  .submit-btn, .reset-btn {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 650px) {
+  .submit-btn, .reset-btn {
+    font-size: 22px;
+  }
+}
+.reset-btn {
+  background-color: #06d8d7;
+  box-shadow: 0px 1px rgba(0, 188, 212, 0.33), 1px 2px #001a1a, 3px 4px rgb(75, 133, 133);
+
+}
+
+.submit-btn:hover {
+  background-color: #7efcf6;
+}
+
+.reset-btn:hover {
+  background-color: #06d8d7;
+}
+
+.submit-btn:active, .reset-btn:active {
+  transform: translate(1px, 1px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background-image {
+  position: absolute;
+  background: url(assets/images/Sr7m0P.jpeg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+
+.page-title {
+  text-align: center;
+  padding: 100px;
+  text-shadow: 0px 1px rgba(0, 188, 212, 0.33), 1px 2px rgb(75, 133, 133) , 2px 3px rgba(0, 188, 212, 0.33), 3px 4px rgb(75, 133, 133),
+  #c7c7c7;
+}
+@media only screen and (min-width: 650px) {
+  .page-title {
+    font-size: 50px;
+  }
+}
+
+.translator-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.english-word {
+  font-size: 15px;
+  border: 4px solid rgb(75, 133, 133);
+
+}
+@media only screen and (min-width: 390px) {
+  .english-word {
+    width: 35vh;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .english-word {
+    width: 50vh;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 650px) {
+  .english-word {
+    width: 70vh;
+    font-size: 30px;
+  }
+}
+
+.morse-translation {
+  padding: 20px 5px 0px;
+  border: 4px solid rgb(75, 133, 133);
+  background-color: rgb(224, 251, 254);
+}
+
+@media only screen and (min-width: 390px) {
+  .morse-translation {
+    width: 35vh;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .morse-translation {
+    width: 50vh;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 650px) {
+  .morse-translation {
+    width: 70vh;
+    font-size: 30px;
+  }
+}
