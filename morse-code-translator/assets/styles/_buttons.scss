@@ -1,0 +1,40 @@
+@import "_variables.scss";
+
+.btn-container {
+  display: flex;
+  gap: 50px;
+}
+
+.submit-btn, .reset-btn {
+  padding: 10px;
+  background-color: $secondary-colour;
+  border: 2px solid $tertiary-colour;
+  box-shadow: 0px 1px $primary-colour, 1px 2px $primary-colour, 3px 4px $tertiary-colour;
+  cursor: pointer;
+  font-weight: bold;
+  
+  @media only screen and (min-width: $medium-screen) {
+    font-size: 18px;
+  }
+
+  @media only screen and (min-width: $large-screen) {
+    font-size: 22px;
+  }
+}
+
+.reset-btn {
+  background-color: $primary-colour;
+  box-shadow: 0px 1px $secondary-colour, 1px 2px $secondary-colour, 3px 4px $tertiary-colour;
+}
+
+.submit-btn:hover {
+  background-color: $submit-btn-hover-colour;
+}
+
+.reset-btn:hover {
+  background-color: $reset-btn-hover-colour;
+}
+
+.submit-btn:active, .reset-btn:active {
+  transform: translate(1px, 1px);
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Morse-Code-Translator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4naans/Morse-Code-Translator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/4naans/Morse-Code-Translator/issues"
+  },
+  "homepage": "https://github.com/4naans/Morse-Code-Translator#readme",
+  "dependencies": {
+    "@babel/core": "^7.16.12"
+  }
+}

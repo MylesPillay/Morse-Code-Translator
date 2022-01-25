@@ -1,0 +1,125 @@
+.background-img {
+    position: absolute;
+    background: url(assets/media/morse-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    opacity: 25%;
+  }
+  
+  .page-title {
+    text-align: center;
+    padding: 100px;
+    text-shadow: 0px 1px #7CA982, 1px 2px #7CA982, 2px 3px #7CA982, 3px 4px #7CA982, 5px 6px #F1F7ED;
+  }
+  @media only screen and (min-width: 650px) {
+    .page-title {
+      font-size: 48px;
+    }
+  }
+  
+  .translation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .english-word {
+    font-size: 15px;
+    border: 2px solid black;
+  }
+  @media only screen and (min-width: 390px) {
+    .english-word {
+      width: 35vh;
+    }
+  }
+  @media only screen and (min-width: 480px) {
+    .english-word {
+      width: 50vh;
+      font-size: 20px;
+    }
+  }
+  @media only screen and (min-width: 650px) {
+    .english-word {
+      width: 70vh;
+      font-size: 30px;
+    }
+  }
+  
+  .morse-translation {
+    padding: 20px 5px 0px;
+    border: 2px solid black;
+  }
+  @media only screen and (min-width: 390px) {
+    .morse-translation {
+      width: 35vh;
+    }
+  }
+  @media only screen and (min-width: 480px) {
+    .morse-translation {
+      width: 50vh;
+      font-size: 20px;
+    }
+  }
+  @media only screen and (min-width: 650px) {
+    .morse-translation {
+      width: 70vh;
+      font-size: 30px;
+    }
+  }
+  
+  .page-title, .english-word, .submit-btn, .reset-btn, .morse-translation {
+    font-family: "Share Tech Mono", monospace;
+  }
+  
+  .btn-container {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .submit-btn, .reset-btn {
+    padding: 10px;
+    background-color: #F1F7ED;
+    border: 2px solid black;
+    box-shadow: 0px 1px #7CA982, 1px 2px #7CA982, 3px 4px black;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  @media only screen and (min-width: 480px) {
+    .submit-btn, .reset-btn {
+      font-size: 18px;
+    }
+  }
+  @media only screen and (min-width: 650px) {
+    .submit-btn, .reset-btn {
+      font-size: 22px;
+    }
+  }
+  
+  .reset-btn {
+    background-color: #7CA982;
+    box-shadow: 0px 1px #F1F7ED, 1px 2px #F1F7ED, 3px 4px black;
+  }
+  
+  .submit-btn:hover {
+    background-color: #bdf09a;
+  }
+  
+  .reset-btn:hover {
+    background-color: #57a161;
+  }
+  
+  .submit-btn:active, .reset-btn:active {
+    transform: translate(1px, 1px);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
