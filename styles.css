@@ -49,113 +49,36 @@
   gap: 3rem;
 }
 .morse-translation {
-  border: 4px solid rgb(75, 133, 133);
-}
-
-@media only screen and (min-width: 390px) {
-  .english-word {
-    width: 35vh;
-  }
-}
-@media only screen and (min-width: 480px) {
-  .english-word {
-    width: 50vh;
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 650px) {
-  .english-word {
-    width: 70vh;
-    font-size: 30px;
-  }
-}
-
-.morse-translation {
   padding: 20px 5px 0px;
   border: 4px solid rgb(75, 133, 133);
   background-color: rgb(224, 251, 254);
 }
 
 @media only screen and (min-width: 390px) {
-  .morse-translation {
+  .user-input, .morse-translation {
     width: 35vh;
-  }
-}
-@media only screen and (min-width: 480px) {
-  .morse-translation {
-    width: 50vh;
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 650px) {
-  .morse-translation {
-    width: 70vh;
-    font-size: 30px;
   }
 }
 
+@media only screen and (min-width: 480px) {
+  .user-input, .morse-translation {
+    width: 50vh;
+    font-size: 20px;
+}
+  .submit-btn, .reset-btn {
+    font-size: 18px;
+    }
+}
 
-@media only screen and (min-width: 480px) {
-  .submit-btn, .reset-btn {
-    font-size: 18px;
-  }
-}
-@media only screen and (min-width: 650px) {
-  .submit-btn, .reset-btn {
-    font-size: 22px;
-  }
-}
-@media only screen and (min-width: 390px) {
-  .morse-translation {
-    width: 35vh;
-  }
-}
-@media only screen and (min-width: 480px) {
-  .morse-translation {
-    width: 50vh;
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 650px) {
-  .morse-translation {
-    width: 70vh;
-    font-size: 30px;
-  }
-}
-@media only screen and (min-width: 650px) {
-  .page-title {
-    font-size: 48px;
-  }
-}
-@media only screen and (min-width: 390px) {
-  .user-input {
-    width: 35vh;
-  }
-}
-@media only screen and (min-width: 480px) {
-  .user-input {
-    width: 50vh;
-    font-size: 20px;
-  }
-}
-@media only screen and (min-width: 650px) {
-  .user-input {
-    width: 70vh;
-    font-size: 30px;
-  }
-}
-@media only screen and (min-width: 480px) {
-  .submit-btn, .reset-btn {
-    font-size: 18px;
-  }
-}
-@media only screen and (min-width: 650px) {
-  .submit-btn, .reset-btn {
-    font-size: 22px;
-  }
-}
 @media only screen and (min-width: 650px) {
   .page-title {
     font-size: 50px;
+  }
+  .user-input, .morse-translation {
+    width: 70vh;
+    font-size: 30px;
+  }
+  .submit-btn, .reset-btn {
+    font-size: 22px;
   }
 }
