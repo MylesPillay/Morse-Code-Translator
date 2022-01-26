@@ -17,7 +17,8 @@
 .page-title {
   color: #7efcf6;
   text-align: center;
-  padding: 100px;
+  padding-top: 60px;
+  padding-bottom: 25px;
   text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
 }
 .user-input {
@@ -46,7 +47,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 1.2rem;
 }
 .morse-translation {
   padding: 20px 5px 0px;
