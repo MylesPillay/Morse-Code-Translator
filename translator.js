@@ -2,57 +2,109 @@ export const translateToMorse = (english) => {
   let englishArr = english.split("");
 
   let translation = englishArr.map((englishLetter) => {
-    if (englishLetter === "a" || "A") {
+    if (englishLetter === "a") {
       return ".-";
-    } else if (englishLetter === "b"|| "B") {
+    } else if (englishLetter === "b") {
       return "-...";
-    } else if (englishLetter === "c" || "C") {
+    } else if (englishLetter === "c" ) {
       return "-.-.";
-    } else if (englishLetter === "d" || "D") {
+    } else if (englishLetter === "d" ) {
       return "-..";
-    } else if (englishLetter === "e" || "E") {
+    } else if (englishLetter === "e" ) {
       return ".";
-    } else if (englishLetter === "f" || "F") {
+    } else if (englishLetter === "f" ) {
       return "..-.";
-    } else if (englishLetter === "g" || "G") {
+    } else if (englishLetter === "g" ) {
       return "--.";
-    } else if (englishLetter === "h" || "H") {
+    } else if (englishLetter === "h" ) {
       return "....";
-    } else if (englishLetter === "i" || "I") {
+    } else if (englishLetter === "i" ) {
       return "..";
-    } else if (englishLetter === "j" || "J") {
+    } else if (englishLetter === "j" ) {
       return ".---";
-    } else if (englishLetter === "k" || "K") {
+    } else if (englishLetter === "k" ) {
       return "-.-";
-    } else if (englishLetter === "l" || "L") {
+    } else if (englishLetter === "l" ) {
       return ".-..";
-    } else if (englishLetter === "m" || "M") {
+    } else if (englishLetter === "m" ) {
       return "--";
-    } else if (englishLetter === "n" || "N") {
+    } else if (englishLetter === "n" ) {
       return "-.";
-    } else if (englishLetter === "o" || "O") {
+    } else if (englishLetter === "o" ) {
       return "---";
-    } else if (englishLetter === "p" || "P") {
+    } else if (englishLetter === "p" ) {
       return ".--.";
-    } else if (englishLetter === "q" || "Q") {
+    } else if (englishLetter === "q" ) {
       return "--.-";
-    } else if (englishLetter === "r" || "R") {
+    } else if (englishLetter === "r" ) {
       return ".-.";
-    } else if (englishLetter === "s" || "S") {
+    } else if (englishLetter === "s" ) {
       return "...";
-    } else if (englishLetter === "t" || "T") {
+    } else if (englishLetter === "t" ) {
       return "-";
-    } else if (englishLetter === "u" || "U") {
+    } else if (englishLetter === "u" ) {
       return "..-";
-    } else if (englishLetter === "v" || "V") {
+    } else if (englishLetter === "v" ) {
       return "...-";
-    } else if (englishLetter === "w" || "W") {
+    } else if (englishLetter === "w" ) {
       return ".--";
-    } else if (englishLetter === "x" || "X") {
+    } else if (englishLetter === "x" ) {
       return "-..-";
-    } else if (englishLetter === "y" || "Y") {
+    } else if (englishLetter === "y" ) {
       return "-.--";
-    } else if (englishLetter === "z" || "Z") {
+    } else if (englishLetter === "z" ) {
+      return "--..";
+    } if (englishLetter === "A") {
+      return ".-";
+    } else if (englishLetter === "B") {
+      return "-...";
+    } else if (englishLetter === "C") {
+      return "-.-.";
+    } else if (englishLetter ==="D") {
+      return "-..";
+    } else if (englishLetter === "E") {
+      return ".";
+    } else if (englishLetter === "F") {
+      return "..-.";
+    } else if (englishLetter === "G") {
+      return "--.";
+    } else if (englishLetter === "H") {
+      return "....";
+    } else if (englishLetter === "I") {
+      return "..";
+    } else if (englishLetter === "J") {
+      return ".---";
+    } else if (englishLetter === "K") {
+      return "-.-";
+    } else if (englishLetter === "L") {
+      return ".-..";
+    } else if (englishLetter === "M") {
+      return "--";
+    } else if (englishLetter === "N") {
+      return "-.";
+    } else if (englishLetter === "O") {
+      return "---";
+    } else if (englishLetter === "P") {
+      return ".--.";
+    } else if (englishLetter === "Q") {
+      return "--.-";
+    } else if (englishLetter === "R") {
+      return ".-.";
+    } else if (englishLetter === "S") {
+      return "...";
+    } else if (englishLetter === "T") {
+      return "-";
+    } else if (englishLetter === "U") {
+      return "..-";
+    } else if (englishLetter === "V") {
+      return "...-";
+    } else if (englishLetter === "W") {
+      return ".--";
+    } else if (englishLetter === "X") {
+      return "-..-";
+    } else if (englishLetter === "Y") {
+      return "-.--";
+    } else if (englishLetter === "Z") {
       return "--..";
     } else if (englishLetter === " ") {
       return "/";
