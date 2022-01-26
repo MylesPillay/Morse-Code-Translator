@@ -7,7 +7,7 @@
   font-family: "Share Tech Mono", monospace;
 }
 .background-image {
-  position: absolute;
+  position: fixed;
   background: url(assets/images/Sr7m0P.jpeg);
   background-size:cover;
   height: 100vh;
